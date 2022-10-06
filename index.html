@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width+device-width, initial-scale=1.0">
+  <script type="text/javascript" src="script.js" async="" defer=""></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Signos</title>
+
+</head>
+
+<body>
+
+  <div class="container-login">
+    <div class="header-login">
+      <div class="header-login-box">
+        <span class="header-text-position">
+          <a href="https://www.linkedin.com/in/luisgomesp/">&nbsp;<i class="fa fa-user-plus"></i>&nbsp;&nbsp;Desenvolvido Por Luis Felipe Gomes De Paula.</a>
+        </span>
+      </div>
+    </div>
+    <div class="login-box">
+      <div class="login">
+        <h1>Descubra Signos</h1>
+        <from>
+          <fieldset>
+
+            <div>
+              <label for="nome"></label><input placeholder="Nome : " id="nome" type="text">
+              </br>
+              <label for="mesInformado"></label><input placeholder="Mes de nascimento :" id="mesInformado" type="text">
+              </br>
+              <label for="diaDeNascimento"></label><input placeholder="Dia de nascimento :" id="diaDeNascimento" type="text">
+              </br>
+            </div>
+
+          </fieldset>
+          <button value="Calcular" onclick="calcularSignos()">Descobrir Signo</button>
+          </form>
+          <span class="login-separator"></span>
+          <div class="login-social-media">
+            <a href="www.instagram.com/luisgomesp/" target="_blank"><img src="img/Instagram.png" alt="Instagram" width="60px" height="60px"></a>
+            <a href="https://www.linkedin.com/in/luisgomesp/" target="_blank"><img src="img/linkedin.png" alt="Linkedin" width="50px" height="50px"></a>
+            <a href="https://twitter.com/luisgomesp" target="_blank"><img src="img/twitter_circle-512.webp" style="margin-bottom: 5px;" alt="Twitter" width="50px" height="50px"></a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function calcularSignos() {
+      var nome = document.getElementById("nome").value;
+
+      var mesInformado = document.getElementById("mesInformado").value;
+
+      var diaDeNascimento = document.getElementById("diaDeNascimento").value;
+
+      var mesJaneiro = ("Capricornio");
+      var mesFevereiro = ("Aquario");
+      var mesMarco = ("Peixes");
+      var mesAbril = ("Aries");
+      var mesMaio = ("Touro");
+      var mesJunho = ("Gemeos");
+      var mesJulho = ("Cancer");
+      var mesAgosto = ("Leao");
+      var mesSetembro = ("Virgem");
+      var mesOutubro = ("Libra");
+      var mesNovembro = ("Escorpiao");
+      var mesDezembro = ("Sagitario");
+
+      var mesDoSigno = 0;
+      var ano = 12;
+
+
+      while (mesInformado <= ano) {
+
+        if (mesInformado == 1 && diaDeNascimento <= 19) {
+          window.open(
+            'Signos/Signo de Capricórnio - Dados e curiosidades - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 2 && diaDeNascimento <= 18) {
+          window.open(
+            'Signos/Signo de Aquário - Características e muito mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 3 && diaDeNascimento <= 20) {
+          window.open(
+            'Signos/Signo de Peixes - Tudo sobre os piscianos - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 4 && diaDeNascimento <= 19) {
+          window.open(
+            'Signos/Signo de Áries - Características, combinações e mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 5 && diaDeNascimento <= 20) {
+          window.open(
+            'Signos/Signo de Touro - Caraterísticas, combinações e mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 6 && diaDeNascimento <= 20) {
+          window.open(
+            'Signos/Signo de Gêmeos - Tudo sobre os geminianos - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 7 && diaDeNascimento <= 22) {
+          window.open(
+            'Signos/Signo de Câncer - Características e muito mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 8 && diaDeNascimento <= 22) {
+          window.open(
+            'Signos/Signo de Leão_ características, amor e muito mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 9 && diaDeNascimento <= 22) {
+          window.open(
+            'Signos/Signo de Virgem - Características e muito mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 10 && diaDeNascimento <= 22) {
+          window.open(
+            'Signos/Signo de Libra - Características e muito mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 11 && diaDeNascimento <= 21) {
+          window.open(
+            'Signos/Signo de Escorpião - Características, sinastria e mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+
+        else if (mesInformado == 12 && diaDeNascimento <= 21) {
+          window.open(
+            'Signos/Signo de Sagitário - Características e muito mais! - Mapa do Meu Céu.pdf',
+            '_blank'
+          );
+          break;
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
